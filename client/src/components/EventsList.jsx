@@ -19,7 +19,7 @@ export function EventsList() {
           loadEvents();
     }, []);
     
-    return <div className='grid grid-flow-row gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+    return <div className='grid grid-flow-row gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4'>
       {loading ?(
         <div className='my-4 mx-auto col-span-3'>
           <div role="status">
