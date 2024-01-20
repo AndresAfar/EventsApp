@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+
+nav {
+    background-color: #0f172a;
+    list-style: none;
+    position: sticky;
+    top: 0;
+}
