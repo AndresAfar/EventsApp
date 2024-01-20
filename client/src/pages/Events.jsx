@@ -8,15 +8,11 @@ export const Events = () => {
       <div className='flex justify-end pt-4'>
         <EventAddButton/>
       </div>
-
       <section className='px-4'>
-
-      <div className='content-cards-events px-4 mx-auto  max-w-6xl bg-slate-700 rounded-lg '>
-        
-        <EventsList/>
-      </div>
+        <div className='content-cards-events p-4 mx-auto max-w-6xl bg-slate-700 rounded-lg '>
+          <EventsList/>
+        </div>
       </section>
-      
     </div>
   )
 }
