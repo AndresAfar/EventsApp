@@ -16,21 +16,20 @@ export function EventCard({event}) {
 
   return (
 
-    <div className="my-2 sm:w-full min-w-[218px] rounded-lg shadow-lg bg-white text-gray-600 duration-300 hover:-translate-y-1">
-      <a _href="link" className="cursor-pointer">
-        <figure>
-          <a href="#" target="_blank">
-            <img className="proorddo rounded-lg h-48 w-full aspect-auto" loading='lazy'/>
-          </a>
-          <figcaption className="p-4">
-            <a href="#" target='_blank' className="text-[20px] md:text-[20px] mb-4 font-bold leading-relaxed  hover:underline">{event.title}</a>
-            <div className=''>
-              <p className='text-sm sm:text-base'>{fechaFormateado}, {horaFormateada}</p>
-              <p className='text-sm sm:text-base'>{event.locationEvent}</p>
-            </div>
-          </figcaption>
-        </figure>
+    <div className='sm:w-full min-w-[190px] bg-white border border-gray-200 rounded-lg shadow duration-300 hover:-translate-y-1'>
+      <a href="#">
+        <img className='rounded-t-lg' src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
       </a>
+      <div className='p-5'>
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{event.title}</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{fechaFormateado}, {horaFormateada}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{event.locationEvent}</p>
+        
+      </div>
+
     </div>
+
   )
 }
